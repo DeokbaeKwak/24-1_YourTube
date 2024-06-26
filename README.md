@@ -4,7 +4,7 @@
 <img src="src/yourtube_title.png" alt="YourTube Title Logo" width="80%" />
 <h3>24-1 YBIGTA 컨퍼런스</h3>
 
-<em>YOUtube algoRithm TUning Browser Extension</em>
+<p>YOUtube algoRithm TUning Browser Extension</p>
 
 </div>
 
