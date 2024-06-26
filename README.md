@@ -1,7 +1,7 @@
-# YourTube (유튜브 세탁기)
+# YourTube
 
-![image](https://github.com/DeokbaeKwak/24-1_YourTube/assets/121343417/7ad41f34-efcc-494f-8490-6cda0acbcaf1)
 <div align="center">
+<img src="src/yourtube_title.png" alt="YourTube Title Logo" width="80%" />
 <h3>YourTube</h3>
 
 <em>YOUtube algoRithm TUning Browser Extension</em>
