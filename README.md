@@ -2,7 +2,7 @@
 
 <div align="center">
 <img src="src/yourtube_title.png" alt="YourTube Title Logo" width="80%" />
-<h3>YourTube</h3>
+<h3>2024-1 YBIGTA 컨퍼런스</h3>
 
 <em>YOUtube algoRithm TUning Browser Extension</em>
 
@@ -50,8 +50,8 @@ YouTube 사용자들은 추천 알고리즘으로 인해 자신의 원래 목적
         - 1차 크롤링 후, 업로더가 카테고리 설정을 안했을 때 설정되는 영상의 Default 카테고리인 22번 카테고리에 대해서 OpenAI API를 이용해 GPT-4o로 카테고리 재분류를 수행했음.
 
 3. **모델링/아키텍쳐 등** *(프로젝트 특성 및 목표에 따라)*
-    ![image](https://github.com/DeokbaeKwak/24-1_YourTube/assets/121343417/53a62634-8d5a-4343-a409-ec48c57e44d5)
-    ![image](https://github.com/DeokbaeKwak/24-1_YourTube/assets/121343417/2209d8ae-8961-4829-ae33-c56509eb5813)
+    <img src="src/yourtube_architecture1.png" alt="YourTube Architecture 1" width="80%" />
+    <img src="src/yourtube_architecture2.png" alt="YourTube Architecture 2" width="80%" />
 
    
     - (Models)
