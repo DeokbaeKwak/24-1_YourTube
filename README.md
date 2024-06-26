@@ -66,11 +66,11 @@ YouTube 사용자들은 추천 알고리즘으로 인해 자신의 원래 목적
 
 | 이름  | 팀  | 역할  |
 |-----|----|-----|
-| [조윤영](https://github.com/younyoungieo) | DE |  팀장  |
-| [김현호](https://github.com/smthswt) | DE | (역할) |
-| [임종혁] | DE | (역할) |
-| [김예진] | DA | (역할) |
-| [곽민규](https://github.com/DeokbaeKwak) | DS | (역할) |
-| [이승준] | DS | (역할) |
-| [박경욱] | DS | (역할) |
+| **[조윤영](https://github.com/younyoungieo)** | DE |  팀장  |
+| **[김현호](https://github.com/smthswt)** | DE | (역할) |
+| **[임종혁](https://github.com/2000may24th)** | DE | (역할) |
+| **[김예진](https://github.com/gina261)** | DA | (역할) |
+| **[곽민규](https://github.com/DeokbaeKwak)** | DS | (역할) |
+| **[이승준](https://github.com/aiseungjun)** | DS | (역할) |
+| **[박경욱](https://github.com/danielredglasses)** | DS | (역할) |
 
