@@ -1,9 +1,10 @@
 # YourTube (유튜브 세탁기)
 
+![image](https://github.com/DeokbaeKwak/24-1_YourTube/assets/121343417/7ad41f34-efcc-494f-8490-6cda0acbcaf1)
 <div align="center">
-<h3>24-1 YBIGTA 컨퍼런스</h3>
+<h3>YourTube</h3>
 
-<em>(프로젝트에 대한 간략한 소개)</em>
+<em>YOUtube algoRithm TUning Browser Extension</em>
 
 </div>
 
