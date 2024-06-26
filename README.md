@@ -5,6 +5,7 @@
 <h3>24-1 YBIGTA 컨퍼런스</h3>
 
 <p>YOUtube algoRithm TUning Browser Extension</p>
+<!--<p>$\rm{\large{\color{#ee4e56}YOU}}\large{tube \space algo}\large{\color{#ee4e56}R}\large{ithm \space}\large{\color{#ee4e56}TU}\large{ning \space}\large{\color{#ee4e56}B}\large{rowser \space}\large{\color{#ee4e56}E}\large{xtension}$</p>-->
 
 </div>
 
