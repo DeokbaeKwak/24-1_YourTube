@@ -44,6 +44,7 @@ YouTube 사용자들은 추천 알고리즘으로 인해 자신의 원래 목적
         - (Description)
     - YouTube Video Description Dataset
         - YouTube의 영상 7,000개에 대한 세부 정보들을 크롤링하여 직접 구축한 데이터셋.
+        - 1차 크롤링 후, 업로더가 카테고리 설정을 안했을 때 설정되는 영상의 Default 카테고리인 22번 카테고리에 대해서 OpenAI API를 이용해 GPT-4o로 카테고리 재분류를 수행했음.
 
 3. **모델링/아키텍쳐 등** *(프로젝트 특성 및 목표에 따라)*
     ![image](https://github.com/DeokbaeKwak/24-1_YourTube/assets/121343417/53a62634-8d5a-4343-a409-ec48c57e44d5)
