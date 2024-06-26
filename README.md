@@ -18,6 +18,12 @@
 ## 문제 정의
 *(프로젝트를 진행하게된 배경 및 motivation 간략하게 서술)*
 
+*<프로그램 실행 전 이미지> -> <프로그램 실행 후 이미지> 삽입*
+
+YouTube 사용자들은 추천 알고리즘으로 인해 자신의 원래 목적과 관련이 없는 컨텐츠를 소비하는 경우가 많다. 이를 해결하기 위해 사용자들은 자신이 관심 있는 채널을 구독하고 해당 채널의 영상을 시청하지만, 구독한 채널이 많고 다양한 경우에는 자신이 원하는 컨텐츠를 찾기 어렵다.
+
+이 문제를 해결하기 위해, 구독한 채널의 컨텐츠를 카테고리별로 분류하고, 세부 카테고리로 나누어 영상을 필터링할 수 있는 크롬 확장프로그램을 개발하고자 하였다. 이 프로그램을 통해 YouTube 사용자는 원하는 컨텐츠를 쉽게 분류하고 탐색하여 시청할 수 있다.
+
 ## 선행 연구
 *(Optional 필드; 생략해도 무관)*
 
@@ -28,18 +34,22 @@
 ## 접근 방법
 
 1. **태스크** *(세부 목표를 달성하기 위한 구체적인 태스크)*
-    - (Task)
+    - 모델링 팀
         - (Description)
-    - (Task)
+    - 파이프라인 팀
         - (Description)
 
 2. **데이터셋** *(사용한 데이터셋, API 등)*
-    - (Dataset A)
+    - YouTube API
         - (Description)
-    - (Dataset B)
-        - (Description)
+    - YouTube Video Description Dataset
+        - YouTube의 영상 7,000개에 대한 세부 정보들을 크롤링하여 직접 구축한 데이터셋.
 
 3. **모델링/아키텍쳐 등** *(프로젝트 특성 및 목표에 따라)*
+    ![image](https://github.com/DeokbaeKwak/24-1_YourTube/assets/121343417/53a62634-8d5a-4343-a409-ec48c57e44d5)
+    ![image](https://github.com/DeokbaeKwak/24-1_YourTube/assets/121343417/2209d8ae-8961-4829-ae33-c56509eb5813)
+
+   
     - (Models)
         - (Description)
     - (Service Architecture)
