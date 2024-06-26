@@ -7,6 +7,17 @@
 <p>이용자가 원하는대로 YouTube 영상을 분류하는 크롬 확장 프로그램</p>
 <!--<p>$\rm{\large{\color{#ee4e56}YOU}}\large{tube \space algo}\large{\color{#ee4e56}R}\large{ithm \space}\large{\color{#ee4e56}TU}\large{ning \space}\large{\color{#ee4e56}B}\large{rowser \space}\large{\color{#ee4e56}E}\large{xtension}$</p>-->
 
+<!--
+<h6>Compatible with</h6>
+<div>
+<img src=https://img.shields.io/badge/Google_chrome-4285F4?style=for-the-badge&logo=Google-chrome&logoColor=white>
+<img src=https://img.shields.io/badge/Microsoft_Edge-0078D7?style=for-the-badge&logo=Microsoft-edge&logoColor=white>
+<img src=https://img.shields.io/badge/Brave-FF1B2D?style=for-the-badge&logo=Brave&logoColor=white>
+<img src=https://img.shields.io/badge/Vivaldi-EF3939?style=for-the-badge&logo=Vivaldi&logoColor=white>
+</div>
+<h6>and other Chromium based browsers</h6>
+-->
+
 </div>
 
 ## 목차
