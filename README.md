@@ -72,12 +72,14 @@ YouTube 사용자들은 추천 알고리즘으로 인해 자신의 원래 목적
         - 영상 데이터셋에서 업로더가 카테고리 설정을 안했을 때 설정되는 영상의 Default 카테고리인 22번 카테고리에 대해서 OpenAI API를 이용해 GPT-4o로 카테고리 재분류를 수행했음.
 
 3. **모델링/아키텍쳐 등**
-    <img src="src/YourTube_Architecture.png" alt="YourTube Architecture" width="80%" />
+   <img src="src/YourTube_Architecture.png" alt="YourTube Architecture" width="80%" />
 
    - 전체 카테고리 분류 모델
-      - 구독한 채널의 영상들의 정보를 바탕으로 영상들을 YouTube 기본 제공 카테고리에 맞게 분류한다. 전체 카테고리 -> BERT Multilingual Base Model (cased) Pre-trained 및 Fine-tuned
+      - 구독한 채널의 영상들의 정보를 바탕으로 영상들을 YouTube 기본 제공 카테고리에 맞게 분류한다.
+      - Google에서 개발한 BERT Multilingual Base Model (Cased) 모델을 YouTube 영상 데이터셋을 이용해 Fine-Tune 하였다.
    - 세부 카테고리 분류 모델
-      - 카테고리별로 분류된 영상들에 대해 세부 카테고리를 기준으로 분류한다. 세부 카테고리 -> Sentence Transformer(paraphrase-MiniLM-L6-v2)
+      - 카테고리별로 분류된 영상들에 대해 세부 카테고리를 기준으로 분류한다.
+      - Sentence Transformer 기반의 paraphrase-MiniLM-L6-v2 모델을 이용했다.
    - Mongo DB
         - (Description)
 
