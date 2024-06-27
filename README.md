@@ -75,9 +75,9 @@ YouTube 사용자들은 추천 알고리즘으로 인해 자신의 원래 목적
     <img src="src/YourTube_Architecture.png" alt="YourTube Architecture" width="80%" />
 
    - 전체 카테고리 분류 모델
-      - 구독한 채널의 영상들의 정보를 바탕으로 영상들을 YouTube 기본 제공 카테고리에 맞게 분류한다.
+      - 구독한 채널의 영상들의 정보를 바탕으로 영상들을 YouTube 기본 제공 카테고리에 맞게 분류한다. 전체 카테고리 -> BERT Multilingual Base Model (cased)
    - 세부 카테고리 분류 모델
-      - 카테고리별로 분류된 영상들에 대해 세부 카테고리를 기준으로 분류한다.
+      - 카테고리별로 분류된 영상들에 대해 세부 카테고리를 기준으로 분류한다. 세부 카테고리 -> Sentence Transformer(paraphrase-MiniLM-L6-v2)
    - Mongo DB
         - (Description)
 
