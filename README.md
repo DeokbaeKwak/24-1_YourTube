@@ -4,7 +4,7 @@
 <img src="src/yourtube_title.png" alt="YourTube Title Logo" width="80%" />
 <h3>24-1 YBIGTA 컨퍼런스</h3>
 
-<p>이용자가 원하는대로 YouTube 영상을 분류하는 크롬 확장 프로그램</p>
+<p>사용자가 원하는대로 YouTube 영상을 분류하는 크롬 확장 프로그램</p>
 <!--<p>$\rm{\large{\color{#ee4e56}YOU}}\large{tube \space algo}\large{\color{#ee4e56}R}\large{ithm \space}\large{\color{#ee4e56}TU}\large{ning \space}\large{\color{#ee4e56}B}\large{rowser \space}\large{\color{#ee4e56}E}\large{xtension}$</p>-->
 
 <!--
