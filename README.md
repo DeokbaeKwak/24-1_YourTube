@@ -60,7 +60,7 @@ YouTube 사용자들은 추천 알고리즘으로 인해 자신의 원래 목적
         - 크롬 확장 프로그램 배포
     - 모델링 팀
         - 영상 카테고리 분류 모델 학습을 위한 데이터셋 수집
-        - 영상 카테고리, 세부 카테고리 분류를 위한 모델 학습
+        - 영상 카테고리 분류를 위한 BERT 모델 학습
         - 모델 배포
 
 2. **데이터셋** *(사용한 데이터셋, API 등)*
@@ -76,10 +76,10 @@ YouTube 사용자들은 추천 알고리즘으로 인해 자신의 원래 목적
 
    - 전체 카테고리 분류 모델
       - 구독한 채널의 영상들의 정보를 바탕으로 영상들을 YouTube 기본 제공 카테고리에 맞게 분류한다.
-      - Google에서 개발한 BERT Multilingual Base Model (Cased) 모델을 YouTube 영상 데이터셋을 이용해 Fine-Tune 하였다.
+      - <a href="https://huggingface.co/google-bert/bert-base-multilingual-cased" target="_blank">BERT Multilingual Base Model (Cased)</a> 모델을 YouTube 영상 데이터셋을 이용해 Fine-Tune 하였다.
    - 세부 카테고리 분류 모델
       - 카테고리별로 분류된 영상들에 대해 세부 카테고리를 기준으로 분류한다.
-      - Sentence Transformer 기반의 paraphrase-MiniLM-L6-v2 모델을 이용했다.
+      - Sentence Transformer 기반의 <a href="https://huggingface.co/sentence-transformers/paraphrase-MiniLM-L6-v2" target="_blank">paraphrase-MiniLM-L6-v2</a> 모델을 이용했다.
    - Mongo DB
         - (Description)
 
