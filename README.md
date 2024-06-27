@@ -42,12 +42,10 @@ YouTube 사용자들은 추천 알고리즘으로 인해 자신의 원래 목적
 
 *(세부적인 목표 및 계획)*
 
-1. YouTube API를 이용해 사용자의 구독 정보를 가져온다.
-2. 구독된 채널별로 최신 영상을 15개씩 가져온다.
+1. YouTube API를 이용해 사용자의 YouTube 구독 정보를 가져온다.
+2. 사용자가 구독한 채널별로 최신 영상을 15개씩 가져온다.
 3. 가져온 영상들을 YouTube 영상 카테고리에 따라 분류한다.
-4. 카테고리별로 영상들을 사용자가 설정 가능한 세부 카테고리에 따라 분류한다.
-
-   4-1. 이용자 입력에 따라 새로운 세부 카테고리 설정 가능.
+4. 영상들을 각 카테고리별로 사용자가 설정 가능한 세부 카테고리에 따라 분류한다.
 
 
 ## 접근 방법
@@ -61,26 +59,27 @@ YouTube 사용자들은 추천 알고리즘으로 인해 자신의 원래 목적
     - 모델링 팀
         - 영상 카테고리 분류 모델 학습을 위한 데이터셋 수집
         - 영상 카테고리 분류를 위한 BERT 모델 학습
-        - 모델 배포
+        - 모델 배포 및 서버 연결
 
 2. **데이터셋** *(사용한 데이터셋, API 등)*
-    - YouTube API
-        - 이용자의 구독 채널 목록을 가져온다.
     - YouTube Video Description Dataset
         - YouTube의 영상 7,000개에 대한 세부 정보들을 크롤링하여 직접 구축한 데이터셋.
-     - OpenAI API
-        - 영상 데이터셋에서 업로더가 카테고리 설정을 안했을 때 설정되는 영상의 Default 카테고리인 22번 카테고리에 대해서 OpenAI API를 이용해 GPT-4o로 카테고리 재분류를 수행했음.
+    - YouTube API
+        - 사용자의 구독 채널 목록을 가져오기 위한 API
+    - OpenAI API
+        - 영상 데이터셋에서 업로더가 카테고리 설정을 안했을 때 설정되는 영상의 Default 카테고리인 22번 카테고리에 대해 재분류를 하기 위해 사용한 API
+        - OpenAI의 GPT-4o 모델을 이용해 영상의 제목, 설명, 자막을 바탕으로 영상의 카테고리를 재분류했음.
 
 3. **모델링/아키텍쳐 등**
 
    <img src="src/YourTube_Architecture.png" alt="YourTube Architecture" width="80%" />
 
    - 전체 카테고리 분류 모델
+      - <a href="https://huggingface.co/google-bert/bert-base-multilingual-cased" target="_blank">BERT Multilingual Base Model (Cased)</a>을 YouTube 영상 데이터셋을 이용해 Fine-Tune한 모델.
       - 구독한 채널의 영상들의 정보를 바탕으로 영상들을 YouTube 기본 제공 카테고리에 맞게 분류한다.
-      - <a href="https://huggingface.co/google-bert/bert-base-multilingual-cased" target="_blank">BERT Multilingual Base Model (Cased)</a> 모델을 YouTube 영상 데이터셋을 이용해 Fine-Tune 하였다.
    - 세부 카테고리 분류 모델
+      - Sentence Transformer 기반의 <a href="https://huggingface.co/sentence-transformers/paraphrase-MiniLM-L6-v2" target="_blank">paraphrase-MiniLM-L6-v2</a> 모델.
       - 카테고리별로 분류된 영상들을 사용자가 설정 가능한 세부 카테고리를 기준으로 분류한다.
-      - Sentence Transformer 기반의 <a href="https://huggingface.co/sentence-transformers/paraphrase-MiniLM-L6-v2" target="_blank">paraphrase-MiniLM-L6-v2</a> 모델을 이용했다.
    - Mongo DB
         - (Description)
 
