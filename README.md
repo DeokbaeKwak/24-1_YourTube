@@ -38,8 +38,6 @@ YouTube 사용자들은 추천 알고리즘으로 인해 자신의 원래 목적
 *(Optional 필드; 생략해도 무관)*-->
 
 ## 세부 목표
-
-
 1. YouTube API를 이용해 사용자의 YouTube 구독 정보를 가져온다.
 2. 사용자가 구독한 채널별로 최신 영상을 15개씩 가져온다.
 3. 가져온 영상들을 YouTube 영상 카테고리에 따라 분류한다.
@@ -49,18 +47,18 @@ YouTube 사용자들은 추천 알고리즘으로 인해 자신의 원래 목적
 
 ## 접근 방법
 
-1. **태스크** *(세부 목표를 달성하기 위한 구체적인 태스크)*
-    - 파이프라인 팀
+1. **태스크**
+    - **파이프라인 팀**
         - 데이터베이스 구축
         - Google Cloud Platform을 이용해 서버 구축
         - 프론트엔드 구현
         - 크롬 확장 프로그램 배포
-    - 모델링 팀
+    - **모델링 팀**
         - 영상 카테고리 분류 모델 학습을 위한 데이터셋 수집
         - 영상 카테고리 분류를 위한 BERT 모델 학습
         - 모델 배포 및 서버 연결
 
-2. **데이터셋** *(사용한 데이터셋, API 등)*
+2. **데이터셋**
     - YouTube Video Description Dataset
         - YouTube의 영상 7,000개에 대한 세부 정보들을 크롤링하여 직접 구축한 데이터셋.
     - YouTube API
@@ -72,7 +70,9 @@ YouTube 사용자들은 추천 알고리즘으로 인해 자신의 원래 목적
 3. **모델링/아키텍쳐 등**
 
    <img src="src/YourTube_Architecture.png" alt="YourTube Architecture" width="80%" />
-
+   
+   - YouTube API
+      - 사용자의 YouTube 구독 채널 목록을 가져온다.
    - 전체 카테고리 분류 모델
       - <a href="https://huggingface.co/google-bert/bert-base-multilingual-cased" target="_blank">BERT Multilingual Base Model (Cased)</a>을 YouTube 영상 데이터셋을 이용해 Fine-Tune한 모델.
       - 구독한 채널의 영상들의 정보를 바탕으로 영상들을 YouTube 기본 제공 카테고리에 맞게 분류한다.
@@ -83,8 +83,6 @@ YouTube 사용자들은 추천 알고리즘으로 인해 자신의 원래 목적
         - (Description)
 
 ## 결과 및 주요 기능
-
-*(평가 지표, 구현한 핵심 기능 등)*
 
 프로그램을 이용해 특정 영상들을 분류한 스크린샷 제시 (대분류 및 세부 카테고리 분류)
 
