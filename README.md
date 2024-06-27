@@ -65,7 +65,7 @@ YouTube 사용자들은 추천 알고리즘으로 인해 자신의 원래 목적
 
 2. **데이터셋** *(사용한 데이터셋, API 등)*
     - YouTube API
-        - (Description)
+        - 이용자의 구독 채널 목록을 가져온다.
     - YouTube Video Description Dataset
         - YouTube의 영상 7,000개에 대한 세부 정보들을 크롤링하여 직접 구축한 데이터셋.
      - OpenAI API
