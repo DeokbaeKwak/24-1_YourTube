@@ -29,6 +29,9 @@
 
 ## 문제 정의
 *<프로그램 실행 전 이미지> -> <프로그램 실행 후 이미지> 삽입*
+<img src="src/YourTube_test1.png" alt="YourTube Test 1" width="80%" />
+<img src="src/YourTube_test2.png" alt="YourTube Test 2" width="80%" />
+
 
 YouTube 사용자들은 추천 알고리즘으로 인해 자신의 원래 목적과 관련이 없는 컨텐츠를 소비하는 경우가 많다. 이를 해결하기 위해 사용자들은 자신이 관심 있는 채널을 구독하고 해당 채널의 영상을 시청하지만, 구독한 채널이 많고 다양한 경우에는 자신이 원하는 컨텐츠를 찾기 어렵다.
 
