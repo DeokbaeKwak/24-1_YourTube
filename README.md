@@ -90,7 +90,7 @@ YouTube 사용자들은 추천 알고리즘으로 인해 자신의 원래 목적
         - (Description)
 
 ## 결과 및 주요 기능
-<img src="src/YourTube_test3.png" alt="YourTube Test 3" width="80%" />
+<img src="src/YourTube_test3 .png" alt="YourTube Test 3" width="80%" />
 
 **확장 프로그램 실행 화면**
 
